@@ -56,9 +56,7 @@ public class ImovelRest {
 	public List<Imovel> listaDonoImovel(){
 		
 		String token = request.getHeader("Authorization");	
-		
-		token = token.substring(1, token.length() - 1);
-		 
+	
 		Algorithm algorithm = Algorithm.HMAC256(ClienteRest.SECRET);
 		
 		JWTVerifier verifier = JWT.require(algorithm).withIssuer(ClienteRest.EMISSOR).build();

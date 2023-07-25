@@ -28,6 +28,8 @@ public class Cliente {
 	
 	private String senha;
 	
+	private String emailGoogle;
+	
 	// metodo para setar a senha aplicando o hash
 		public void setSenha(String senha) {
 

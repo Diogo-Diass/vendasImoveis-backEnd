@@ -11,14 +11,14 @@ public class Erro {
 	
 	private String mensagem;
 	
-	private String exception;
+	private int codigo;
 	
-	public Erro(HttpStatus codErro, String mensagem, String exception) {
+	public Erro(HttpStatus codErro, String mensagem, int codigo) {
 		
 		this.codErro = codErro;
 		
 		this.mensagem = mensagem;
 		
-		this.exception = exception;
+		this.codigo = codigo;
 	}
 }

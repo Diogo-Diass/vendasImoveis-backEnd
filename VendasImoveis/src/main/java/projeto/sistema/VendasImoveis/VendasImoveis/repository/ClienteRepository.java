@@ -11,5 +11,10 @@ public interface ClienteRepository extends PagingAndSortingRepository<Cliente, L
 
 	public List<Cliente> findAll();
 	
-	public Cliente findByEmailAndSenha(String email, String senha);
+	public Cliente findByEmailAndSenhaOrEmailGoogle(String email, String senha, String emailGoogle);
+	
+	public Cliente findByEmailGoogle(String email);
+	
+	public Cliente findByEmail(String email);
+	
 }
